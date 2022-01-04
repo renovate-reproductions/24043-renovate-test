@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b517442c11ab96244a4896c83e6b3644",
+    "content-hash": "8c55a7d3bcd9d49688a196dfd1a708e2",
     "packages": [
         {
             "name": "composer/semver",
@@ -93,17 +93,12 @@
             "dist": {
                 "type": "path",
                 "url": "../a",
-                "reference": "716767f527fd08115c90ff152e549ca11cf44428"
+                "reference": "0aa4a5dae0a3408a05be61bc8431f610067fdb08"
             },
             "require": {
                 "composer/semver": "3.2.6"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "transport-options": {
                 "relative": true
             }
@@ -114,18 +109,13 @@
             "dist": {
                 "type": "path",
                 "url": "../b",
-                "reference": "3eb28183bee0380cb072658f658aecb6b4a06da1"
+                "reference": "187d5b5777f98ac02c83baf10b1ffc4e026f2d56"
             },
             "require": {
                 "composer/semver": "3.2.6",
-                "monorepo/a": "^1.0"
+                "monorepo/a": "@dev"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "transport-options": {
                 "relative": true
             }
@@ -134,10 +124,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "monorepo/b": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }

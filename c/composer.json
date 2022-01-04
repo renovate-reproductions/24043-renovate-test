@@ -1,7 +1,7 @@
 {
     "name": "monorepo/c",
     "require": {
-        "monorepo/b": "^1.0",
+        "monorepo/b": "@dev",
         "composer/semver": "3.2.6"
     },
     "repositories": [
