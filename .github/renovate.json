@@ -1,14 +1,5 @@
 {
 	"extends": [ "config:base" ],
 	"timezone": "UTC",
-        "packageRules": [
-            {
-                "matchPackageNames": [
-                    "phpunit/phpunit",
-                    "johnkary/phpunit-speedtrap"
-                ],
-                "rangeStrategy": "widen"
-            }
-        ],
 	"dependencyDashboard": true
 }

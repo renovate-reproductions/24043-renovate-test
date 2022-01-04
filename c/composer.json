@@ -1,0 +1,15 @@
+{
+    "name": "monorepo/c",
+    "require": {
+        "monorepo/b": "^1.0",
+        "composer/semver": "3.2.6"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../*"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

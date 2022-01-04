@@ -1,0 +1,11 @@
+{
+    "name": "monorepo/a",
+    "require": {
+        "composer/semver": "3.2.6"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
