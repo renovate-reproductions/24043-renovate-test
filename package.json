@@ -1,6 +1,5 @@
 {
     "dependencies": {
-        "@wordpress/i18n": "4.4.0",
-        "@wordpress/icons": "7.0.1"
+        "chalk": "^5.0.0"
     }
 }
