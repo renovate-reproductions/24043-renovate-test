@@ -10,7 +10,7 @@ module.exports = {
 
         // Post-upgrade command
         allowedPostUpgradeCommands: [ '.github/files/renovate-post-upgrade-run.sh' ],
-        postUpgradeTasks: 
+        postUpgradeTasks: {
             commands: [ '.github/files/renovate-post-upgrade-run.sh {{{branchName}}}' ],
             executionMode: 'branch',
         },
