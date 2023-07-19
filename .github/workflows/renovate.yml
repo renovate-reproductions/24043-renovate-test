@@ -11,8 +11,13 @@ on:
           - trace
       dryRun:
         description: 'Dry run?'
-        required: false
-        type: boolean
+        type: choice
+        default: 'no'
+        options:
+          - 'no'
+          - full
+          - lookup
+          - extract
 concurrency:
   group: renovate-${{ github.ref }}
 
@@ -29,4 +34,4 @@ jobs:
           renovate-version: 36.13.2
         env:
           LOG_LEVEL: ${{ github.event.inputs.logLevel || 'debug' }}
-          RENOVATE_DRY_RUN: ${{ github.event.inputs.dryRun }}
+          RENOVATE_DRY_RUN: ${{ github.event.inputs.dryRun == 'no' && 'null' || github.event.inputs.dryRun || 'null' }}
