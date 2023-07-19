@@ -1,1 +1,1 @@
-Testing how renovate interacts with pnpm 8's resolution-mode
+This is a minimal reproduction repo for TBD

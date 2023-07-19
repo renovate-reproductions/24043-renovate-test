@@ -8,14 +8,14 @@ module.exports = {
 	onboarding: false,
 	requireConfig: false,
 
+        // Post-upgrade command
+        allowedPostUpgradeCommands: [ '.github/files/renovate-post-upgrade-run.sh' ],
+        postUpgradeTasks: 
+            commands: [ '.github/files/renovate-post-upgrade-run.sh {{{branchName}}}' ],
+            executionMode: 'branch',
+        },
+
 	// This is the renovate configuration.
-	extends: [ 'config:base' ],
+	extends: [ 'config:recommended' ],
 	timezone: 'UTC',
-	dependencyDashboard: true,
-	packageRules: [
-		{
-			extends: [ 'monorepo:wordpress' ],
-			separateMajorMinor: false,
-		},
-	],
 };
