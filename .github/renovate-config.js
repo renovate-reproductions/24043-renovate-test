@@ -12,6 +12,7 @@ module.exports = {
 	extends: [ 'config:recommended' ],
 	timezone: 'UTC',
 	customEnvVariables: {
-		CONTAINERBASE_LOG_LEVEL: 'debug'
+		CONTAINERBASE_LOG_LEVEL: 'debug',
+		HOSTNAME: 'something',
 	},
 };
