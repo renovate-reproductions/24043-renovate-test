@@ -1,6 +1,7 @@
 module.exports = {
 	branchPrefix: 'renovate-sh/',
 	gitAuthor: 'Renovate Bot (self-hosted) <bot@renovateapp.com>',
+	username: process.env.GITHUB_ACTOR,
 	repositories: [ 'renovate-reproductions/24043-renovate-test' ],
 
 	// We're including configuration in this file.
